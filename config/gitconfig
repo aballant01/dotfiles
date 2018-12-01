@@ -1,0 +1,12 @@
+[user]
+    email = "aballant01@gmail.com"
+    name = "Alistair Ballantine"
+[color]
+	ui = auto
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	chk = checkout
+[pull]
+	rebase = true
+[core]
+	excludesfile = /Users/alistair/.gitignore_global

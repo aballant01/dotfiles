@@ -1,3 +1,5 @@
+# link as .tmux.conf
+
 # turn off the system bell
 set -g visual-bell off
 
