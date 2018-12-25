@@ -2,10 +2,10 @@
     email = "aballant01@gmail.com"
     name = "Alistair Ballantine"
 [color]
-	ui = auto
+    ui = auto
 [alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	chk = checkout
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    chk = checkout
     chm = checkout master
     rbm = rebase master
     rbc = rebase continue
@@ -13,10 +13,10 @@
     unstage = reset HEAD --
     changes = diff HEAD
     reset-date = "!f() { git commit --amend --date \"`date -R`\" --no-edit ; } ; f;"
-    amend = commit --amend --no-edit
+    amend = commit -a --amend --no-edit
 [pull]
-	rebase = true
+    rebase = true
 [push]
     default = simple
 [core]
-	excludesfile = /Users/alistair/.gitignore_global
+    excludesfile = /Users/alistair/.gitignore_global
