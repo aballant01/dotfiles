@@ -21,3 +21,10 @@ if [ -a ~/.tmux.conf ] ; then
 else 
     ln -s ./tmux ~/.tmux.conf
 fi
+
+# Link vimrc configuration
+if [ -a ~/.vimrc ] ; then
+    echo ".vimrc already exists, skipping...";
+else
+    ln -s ./vimrc ~/.vimrc
+fi
