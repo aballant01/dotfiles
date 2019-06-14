@@ -1,0 +1,35 @@
+syntax on
+
+" ### UI ###
+set number      " show line numbers
+set showcmd     " Show command in bottom bar
+set wildmenu    " visual autocomplete for command menu
+set showmatch   " highlight matching [{()}]
+
+" Syntax Highlighting
+set t_Co=256
+set background=dark
+colorscheme Tomorrow-Night-Eighties
+
+" Local Directories
+set backupdir=~/.vim/backups
+set directory=~/.vim/swaps
+set undodir=~/.vim/undo
+
+" ### Cursor/Line handling ###
+set autoindent                 " Copies the last line indent when creating a new line
+set diffopt+=iwhite            " Ignore whitespace changes
+set encoding=utf-8 nobomb      " Default encoding. Apparently BOM causes trouble (Note: find out why)
+set expandtab                  " Expand tab to spaces
+set formatoptions+=c           " Format comments
+set formatoptions+=r           " Continue comments by default
+set tabstop=2                  " Number of visual spaces per TAB
+set softtabstop=2              " Number of spaces in tab when editing
+set backspace=indent,eol,start " Make Backspace work like it does in most other programs
+set bs=2                       " Fix backspace behavior to make it work consistently
+
+" Configure FileType Plugin (used for word wrap)
+filetype indent plugin on
+
+" Auto-wrap git commit messages at 72 characters
+au FileType gitcommit setlocal tw=72

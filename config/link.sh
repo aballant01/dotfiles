@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 # Add common git config
 if [ -a ~/.gitconfig ] ; then 
     echo "File .gitconfig already exists, skipping linking. Please manually configure";
@@ -26,5 +25,5 @@ fi
 if [ -a ~/.vimrc ] ; then
     echo ".vimrc already exists, skipping...";
 else
-    ln -s ./vimrc ~/.vimrc
+    ln -s ./vim/vimrc ~/.vimrc
 fi
