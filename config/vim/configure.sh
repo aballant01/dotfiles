@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Sets up the configuration directory used by the vim backup/swap processes
-mkdir -p ~/.config/vim/tmp/backups
-mkdir -p ~/.config/vim/tmp/swaps
-mkdir -p ~/.config/vim/tmp/undo
+# Sets up the data directory used by the vim backup/swap processes
+mkdir -p ~/.local/appdata/vim/backups
+mkdir -p ~/.local/appdata/vim/swaps
+mkdir -p ~/.local/appdata/vim/undo
