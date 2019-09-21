@@ -13,7 +13,7 @@
     unstage = reset HEAD --
     changes = diff HEAD
     reset-date = "!f() { git commit --amend --date \"`date -R`\" --no-edit ; } ; f;"
-    amend = commit -a --amend --no-edit
+    amend = "!f() { git commit -a --amend --date \"`date -R`\" --no-edit ; } ; f;"
 [pull]
     rebase = true
 [push]
