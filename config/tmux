@@ -44,3 +44,30 @@ set -s escape-time 50
 
 # Prevent the session from renaming a window once it has been given a name
 set-option -g allow-rename off
+
+# Configures vi Key Bindings for navigating output buffer
+set-window-option -g mode-keys vi
+
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-sensible'
+set -g @plugin 'sainnhe/tmux-fzf'
+# Enables CPU & GPU percentage
+set -g @plugin 'tmux-plugins/tmux-cpu'
+# set -g @plugin 'laktak/extrakto'
+
+# Other examples:
+# set -g @plugin 'github_username/plugin_name'
+# set -g @plugin 'github_username/plugin_name#branch'
+# set -g @plugin 'git@github.com:user/plugin'
+# set -g @plugin 'git@bitbucket.com:user/plugin'
+
+# Configure tmux-fzf to enable fuzzy-find switching between windows
+# bind-key f run-shell -b "/Users/alistairb/.config/tmux/plugins/tmux-fzf/scripts/window.sh switch"
+
+# Set the CPU and GPU percentage to appear on the right hand side of the 
+# Status Bar
+set -g status-right '#{cpu_bg_color} CPU: #{cpu_icon} #{cpu_percentage} | %a %h-%d %H:%M '
+
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+# run '~/.config/tmux/plugins/tpm/tpm'
